@@ -12,6 +12,11 @@ const Routes: RouteRecordRaw[] = [
     name: "login",
     component: () => import("./Login.vue"),
   },
+  {
+    path: "/signup",
+    name: "signup",
+    component: () => import("./Signup.vue"),
+  },
   ...AccountRoutes,
   {
     path: "/:pathMatch(.*)*",
